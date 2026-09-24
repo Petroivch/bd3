@@ -24,4 +24,3 @@ def get_engine(database_url: str | None = None, *, echo: bool = False) -> Engine
 def get_session_factory(engine: Engine) -> sessionmaker[Session]:
     """Создать фабрику сессий, привязанную к переданному Engine."""
     return sessionmaker(bind=engine, expire_on_commit=False)
-

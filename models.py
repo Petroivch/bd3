@@ -70,4 +70,3 @@ class Post(Base):
 
     def __repr__(self) -> str:
         return f"Post(id={self.id!r}, title={self.title!r}, user_id={self.user_id!r})"
-

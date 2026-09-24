@@ -50,4 +50,3 @@ def downgrade() -> None:
     op.drop_index(op.f("ix_posts_user_id"), table_name="posts")
     op.drop_table("posts")
     op.drop_table("users")
-

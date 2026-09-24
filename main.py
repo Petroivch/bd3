@@ -76,4 +76,3 @@ if __name__ == "__main__":
     except (CrudError, SQLAlchemyError) as error:
         print(f"Ошибка: {error}")
         raise SystemExit(1) from error
-

@@ -164,4 +164,3 @@ def delete_post(session: Session, post_id: int) -> Post:
     except SQLAlchemyError as error:
         session.rollback()
         raise CrudError(f"Не удалось удалить публикацию: {error}") from error
-
